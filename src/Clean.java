@@ -17,6 +17,7 @@ public class Clean {
 	}
 
 	public static void main(String a[]) {
+		System.out.println("Test");
 		try {
 			DirectoryStream<Path> dirStream = Files.newDirectoryStream(desktop);
 			for (Path f : dirStream) {
@@ -27,7 +28,6 @@ public class Clean {
 							System.out.println(Paths.get("D:",t).resolve(f.getFileName()).toString());
 							Files.move(file,Paths.get("D:",t).resolve(f.getFileName()),StandardCopyOption.REPLACE_EXISTING);
 						}
-
 					}
 				}
 			}
