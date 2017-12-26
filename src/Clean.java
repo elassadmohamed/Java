@@ -10,7 +10,5 @@ public class Clean {
 	
 	public static void main(String a []){
 		Clean c=new Clean();
-		
-		System.out.println(Clean.var);
 	}
 }
