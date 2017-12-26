@@ -11,7 +11,7 @@ public class Clean {
 	public static void main(String a []){
 		Clean c=new Clean();
 		
-		System.out.println("From eclipse 13:27");
+		System.out.println("From GitHub 13:29");
 		
 	}
 }
