@@ -27,9 +27,14 @@ public class Clean {
 		Locale.Builder lb=new Locale.Builder();
 		lb.setLanguage("fr");
 		Locale locale=lb.build();
-		ResourceBundle rsb=ResourceBundle.getBundle("Personne",locale);
+		ResourceBundle rsb=ResourceBundle.getBundle("Personne_en.Personne",locale);
 		DateFormat df=DateFormat.getDateInstance(DateFormat.LONG,locale);
-		System.exit(0);
+		Locale l=Locale.getDefault();
+		
+		Locale.setDefault(Locale.CANADA);
+		System.out.println(rsb.getString("start")+" "+l.getAvailableLocales());
+		
+		
 
 		try {
 			DirectoryStream<Path> dirStream = Files.newDirectoryStream(desktop);
